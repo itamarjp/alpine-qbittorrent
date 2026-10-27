@@ -4,4 +4,4 @@ RUN apk upgrade --no-cache && \
     mkdir -p /config /downloads
 ENV HOME=/config
 EXPOSE 8080/tcp 6881/tcp 6881/udp
-CMD ["qbittorrent-nox", "--profile=/config", "--webui-port=8080"]
+CMD ["qbittorrent-nox", "--profile=/config", "--webui-port=8080", "--confirm-legal-notice"]
